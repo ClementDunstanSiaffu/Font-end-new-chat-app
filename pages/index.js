@@ -5,7 +5,7 @@ import logo from '../video7.mp4';
 import Head from 'next/head';
 import Box from '@material-ui/core/Box';
 function Facial(){
-const [width,setWidth] = useState(false)
+
 
 
 if(window.innerWidth >= 992){
