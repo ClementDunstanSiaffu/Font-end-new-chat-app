@@ -7,9 +7,16 @@ import Box from '@material-ui/core/Box';
 function Facial(){
 let isWidth = false;
 useEffect(()=>{
-    if(window.innerWidth >= 992){
-        isWidth = true
-    }
+    const updateAppearance = ()=>{
+        if(window.innerWidth >= 992){
+            isWidth = true
+        }};
+    
+
+    window.addEventListener("load",updateAppearance);
+    return function cleanup(){
+        window.removeEventListener("load",updateAppearance)
+    };
 })
 
     return(
