@@ -6,9 +6,6 @@ import Head from 'next/head';
 import Box from '@material-ui/core/Box';
 function Facial(){
 
-
-
-if(window.innerWidth >= 992){
     return(
          
         <div >
@@ -46,9 +43,7 @@ if(window.innerWidth >= 992){
        
          </div>
     )
-}else{
-    return null
-}
+
     
 }
 
