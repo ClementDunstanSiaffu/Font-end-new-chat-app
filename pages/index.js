@@ -5,8 +5,12 @@ import logo from '../video7.mp4';
 import Head from 'next/head';
 import Box from '@material-ui/core/Box';
 function Facial(){
-
+let isWidth = false;
+if(window.innerWidth >= 992){
+    isWidth = true
+}
     return(
+        isWidth ? (
         <div >
        <Head>
            <title>Letdis</title>
@@ -40,7 +44,7 @@ function Facial(){
        </video>
          </div>
        
-         </div>
+         </div>):null
     )
 }
 
