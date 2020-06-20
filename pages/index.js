@@ -21,7 +21,7 @@ useEffect(()=>{
 })
 
     return(
-        width ? (
+        {width} ? (
         <div >
        <Head>
            <title>Letdis</title>
