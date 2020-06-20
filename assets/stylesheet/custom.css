@@ -2195,11 +2195,11 @@ button.facial-buttons:hover{
 button.button-log:focus{
   outline: none;
 }
-@media only screen and (max-width:991){
+@media only screen and (max-width:991px){
 .view-width{
   display:none;         
 }}
-@media only screen and (min-width:992){
+@media only screen and (min-width:992px){
   .view-width{
     display:block;         
   }}
