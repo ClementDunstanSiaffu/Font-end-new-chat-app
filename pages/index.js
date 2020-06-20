@@ -7,21 +7,10 @@ import Box from '@material-ui/core/Box';
 function Facial(){
 const [width,setWidth] = useState(false)
 
-useEffect(()=>{
-    const updateAppearance = ()=>{
-        if(window.innerWidth >= 992){
-            setWidth(true)
-        }};
-    
 
-    window.addEventListener("load",updateAppearance);
-    return function cleanup(){
-        window.removeEventListener("load",updateAppearance)
-    };
-})
-
+if(window.innerWidth >= 992){
     return(
-        {width} ? (
+         
         <div >
        <Head>
            <title>Letdis</title>
@@ -55,8 +44,12 @@ useEffect(()=>{
        </video>
          </div>
        
-         </div>):null
+         </div>
     )
+}else{
+    return null
+}
+    
 }
 
 export default Facial;
