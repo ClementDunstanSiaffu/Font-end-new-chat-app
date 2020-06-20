@@ -25,22 +25,19 @@ var res1 = divide[0].charAt(0);
 var res2 = divide[1].charAt(0);
 var res3 = res1.concat(" "+res2)*/
 useEffect(()=>{
-    const take = (name)=>{
-        var res3
-        var divide = name.split(" ",2)
-        if(divide.length===1){
-            var res1 = divide[0].charAt(0)
-            res3 = res1
-        }else{
-            var res1 = divide[0].charAt(0);
-            var res2 = divide[1].charAt(0);
-            res3 = res1.concat(" "+res2)
-        }
-        //var res1 = divide[0].charAt(0);
-        //var res2 = divide[1].charAt(0);
-        //var res3 = res1.concat(" "+res2)
-        return res3
-    }
+    var divide = name.split(" ",2)
+    var res3
+    if(divide.length===1){
+    var res1 = divide[0].charAt(0);
+    res3 = res1 
+    setName2(res3)
+}else{
+    var res1 = divide[0].charAt(0);
+    var res2 = divide[1].charAt(0);
+    var res3 = res1.concat(" "+res2)
+    setName2(res3)
+}
+    
 })
 
 

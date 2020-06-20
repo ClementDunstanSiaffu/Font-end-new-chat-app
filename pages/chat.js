@@ -182,7 +182,7 @@ const sendMessage = (event) =>{
    const index = data.indexOf(id)
     console.log(index)
 
-   if(index!==-1 && window.innerWidth>=992){
+   if(index!==-1 ){
        isData = true
     }
 

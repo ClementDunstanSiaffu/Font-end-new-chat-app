@@ -8,7 +8,7 @@ function Facial(){
 
     return(
          
-        <div >
+        <div className="view-width" >
        <Head>
            <title>Letdis</title>
            <meta charSet="utf-8" />
