@@ -1,14 +1,17 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 //import logo from '../assets/images/video5.mp4';
 import logo from '../video7.mp4';
 import Head from 'next/head';
 import Box from '@material-ui/core/Box';
 function Facial(){
 let isWidth = false;
-if(window.innerWidth >= 992){
-    isWidth = true
-}
+useEffect(()=>{
+    if(window.innerWidth >= 992){
+        isWidth = true
+    }
+})
+
     return(
         isWidth ? (
         <div >
