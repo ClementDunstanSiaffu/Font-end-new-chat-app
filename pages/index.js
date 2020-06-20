@@ -5,11 +5,12 @@ import logo from '../video7.mp4';
 import Head from 'next/head';
 import Box from '@material-ui/core/Box';
 function Facial(){
-let isWidth = false;
+const [width,setWidth] = useState(false)
+
 useEffect(()=>{
     const updateAppearance = ()=>{
         if(window.innerWidth >= 992){
-            isWidth = true
+            setWidth(true)
         }};
     
 
@@ -20,7 +21,7 @@ useEffect(()=>{
 })
 
     return(
-        isWidth ? (
+        width ? (
         <div >
        <Head>
            <title>Letdis</title>
