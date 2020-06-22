@@ -820,12 +820,12 @@ body{
 .second-inner-container-chat{
   width:100%;
   border: solid 1px lightgray;
-  height: 130px;
+  height: 132px;
   border-left: none;
   border-right: none;
   border-bottom: none;
   background-color:white;
-  margin-top: -64.5px;
+  margin-top: -65px;
  
 }
 .tab-container{
