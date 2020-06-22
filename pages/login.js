@@ -18,7 +18,7 @@ function Login(){
               backgroundSize: 'cover',
               backgroundRepeat: 'noRepeat',
               marginTop:-10,
-              minHeight: 635,
+              minHeight: 664,
                   }}>
                       
         <div className = "outer-outer-login-container">

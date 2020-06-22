@@ -208,7 +208,7 @@ return(
               backgroundSize: 'cover',
               backgroundRepeat: 'noRepeat',
               marginTop:-10,
-              minHeight: 635,
+              minHeight: 664,
               }} >
        
          <Container style = {{paddingTop:75}}>

@@ -825,7 +825,7 @@ body{
   border-right: none;
   border-bottom: none;
   background-color:white;
-  margin-top: -65px;
+  margin-top: -64.5px;
  
 }
 .tab-container{
@@ -2201,5 +2201,6 @@ button.button-log:focus{
 }}
 @media only screen and (min-width:992px){
   .view-width{
-    display:block;         
+    display:block;  
+           
   }}
