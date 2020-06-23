@@ -2,11 +2,11 @@
 import React,{useState} from 'react';
 import Messages from './messages';
 
-const Message = ({name,messages,data1,room,id})=>{
+const Message = ({name,messages,room,id})=>{
     return(
         <div>
          {messages.map((message,i)=><div key = {i}><Messages message ={message} name = {name}
-          data1 = {data1} room = {room} id = {id} /></div>)}
+          room = {room} id = {id} /></div>)}
        </div>
     )
 

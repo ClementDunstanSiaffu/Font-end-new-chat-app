@@ -4,7 +4,7 @@ import React,{useState} from 'react';
 import Message from './message';
 import Input from './input';
 import Scrollbar from  'react-scrollbars-custom';
-function Chatting({room,name,messages,sendMessage,setMessage,message,data1,id}){
+function Chatting({room,name,messages,sendMessage,setMessage,message,id}){
 
     return(
      
@@ -18,7 +18,7 @@ function Chatting({room,name,messages,sendMessage,setMessage,message,data1,id}){
         marginTop:-20,
         }}
         noScrollX = {true}   className = "scroll-chat" thumbMinSize={30}>
-        <Message  name = {name}  messages ={messages} data1 = {data1} room = {room} id = {id}/> 
+        <Message  name = {name}  messages ={messages}  room = {room} id = {id}/> 
          
         </Scrollbar>
       

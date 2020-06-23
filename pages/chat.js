@@ -59,8 +59,8 @@ console.log(mimi)
 })*/
 
 
-const getAdmin = messages.filter((message)=>message.user === 'admin')
-getAdmin.map((oneAdmin)=>allAdmin = oneAdmin)
+/*--const getAdmin = messages.filter((message)=>message.user === 'admin')
+getAdmin.map((oneAdmin)=>allAdmin = oneAdmin)*/
 //console.log(allAdmin)
 
 //const allTogether = {name:mimi.name,room:mimi.room,id:mimi.id}
@@ -217,7 +217,7 @@ return(
          <div className = "side-container"><Side id = {id} room={room} name={name}/></div>
         </div>
         <Panel value = {value} name = {name} messages = {messages} room = {room} message = {message}
-        setMessage = {setMessage} sendMessage = {sendMessage} data1 = {data1} 
+        setMessage = {setMessage} sendMessage = {sendMessage}  
         id = {id} friends = {friends} room1={room1} name1={name1} setRoom1={setRoom1} setName1={setName1}/>
         
         

@@ -3,7 +3,7 @@
 import React from 'react';
 import Box from '@material-ui/core/Box';
 
-function Messages({name,message,data1,room,id}){
+function Messages({name,message,room,id}){
  
  var trimmedRoom
  if(room){
@@ -19,7 +19,7 @@ if(name){
 }
  
 
- let isSavedMessage = false
+ /*--let isSavedMessage = false
  const savedUser = data1.filter((data2)=>data2.room === trimmedRoom)
  savedUser.map((eachUser)=>{if(eachUser.name === trimmedName){
      isSavedMessage = true
@@ -31,7 +31,7 @@ console.log(nameMessage)
 
 console.log(savedUser)
 const otherUser = savedUser.filter((oneUser)=>oneUser.name === !trimmedName)
-console.log(otherUser)
+console.log(otherUser)*/
 
 let isSentByCurrentUser = false;
 //var trimmedName = name.trim().toLowerCase();
@@ -47,7 +47,7 @@ if(message.id ===id){
 }
 
 
-console.log(data1)
+//console.log(data1)
 
  return(
          
