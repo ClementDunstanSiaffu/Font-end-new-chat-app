@@ -15,7 +15,7 @@ import decodeUriComponent from 'decode-uri-component';
 
 let socket; 
 
-function Chat({data,data1,locationbar}){
+function Chat({data,locationbar}){
 
  
 
@@ -119,11 +119,11 @@ console.log(name1)
        trimmedRoom = ""
    }
     
-   const allSaved = data1.filter((savedUser)=>savedUser.room === trimmedRoom)
+   //--const allSaved = data1.filter((savedUser)=>savedUser.room === trimmedRoom)
    //console.log(allSaved) 
     
 
- useEffect(()=>{
+ /*--useEffect(()=>{
     allSaved.map((eachMessage)=>{
         let ujumbe = {user:`${eachMessage.name}`,text:`${eachMessage.message}`,id:`${eachMessage.ids}`}  
          let meme = ''
@@ -141,7 +141,7 @@ console.log(name1)
   })
     
     
-},[allSaved])
+},[allSaved])*/
 
 
 
@@ -251,12 +251,12 @@ return(
 
 Chat.getInitialProps = async () =>{
     const response = await fetch('https://shielded-forest-44594.herokuapp.com/pata')
-    const response1 = await fetch('https://blooming-journey-09430.herokuapp.com/ujumbe')
+    //--const response1 = await fetch('https://blooming-journey-09430.herokuapp.com/ujumbe')
     const data = await response.json();
-    const data1 = await response1.json();
+    //--const data1 = await response1.json();
     console.log(data);
-    console.log(data1)
-    return {data,data1}
+   //console.log(data1)
+    return {data}
     
 }
 

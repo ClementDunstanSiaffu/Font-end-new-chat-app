@@ -11,7 +11,7 @@ const  Input = ({message,sendMessage,setMessage}) => (
     className = "input-chat"
     value={message}
     onChange = {(event) => setMessage(event.target.value)}
-    onKeyPress = {event => event.key === 'enter' ? sendMessage(event) : null}
+    //onKeyPress = {event => event.key === 'enter' ? sendMessage(event) : null}
     cols="50"
     rows="50"
     style = {{overflow:"hidden",resize:"none",}}
